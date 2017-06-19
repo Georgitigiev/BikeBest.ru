@@ -2324,3 +2324,9 @@ header .wrapper__selectCity__pointer {
   height: 690px;
   border-bottom: solid 1px #7d7d7d;
 }
+.mainFieldProduct__block .infoProduct__comment h2 {
+  font-size: 26px;
+  font-family: arial Narrow, Opensans, sans-serif;
+  font-weight: 100;
+  padding: 35px 0 35px 0;
+}
