@@ -294,7 +294,6 @@ header .wrapper__search__block a:hover {
 }
 header .wrapper__selectCity {
   height: 110px;
-  width: 152px;
   float: left;
   padding-top: 40px;
   padding-left: 58px;
@@ -358,7 +357,6 @@ header .wrapper__selectCity .popap::before {
 }
 header .wrapper__selectCity__city {
   border-bottom: dotted 1px #333;
-  width: 71px;
   height: 20px;
   float: right;
   cursor: pointer;
