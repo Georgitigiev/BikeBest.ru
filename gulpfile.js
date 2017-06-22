@@ -11,13 +11,13 @@ var gulp       			= require('gulp'),
     minifyCss			= require('gulp-clean-css'),
     imgmini             = require('gulp-imagemin'),
     cleanCSS            = require('gulp-clean-css'),
-    autoprefixer        = require('gulp-autoprefixer');
-
+    autoprefixer        = require('gulp-autoprefixer'),
+    minifyjs            = require('gulp-minify');
 
 
 var path = {
  	js:[
-        "bower_components/jquery/dist/jquery.min.js",
+        // "bower_components/jquery/dist/jquery.min.js",
         "bower_components/glidejs/dist/glide.min.js"
 
 	]
@@ -70,8 +70,20 @@ gulp.task('build_js', function(){
 		.pipe(concat('final.js'))
 		.pipe(gulp.dest('dist/js/'))
 		.pipe(connect.reload());
-
 })
+
+gulp.task('vendor_js', function(){
+    return gulp.src(["dist/js/bower_final.js","dist/js/final.js"])
+                     .pipe(concat('final.min.js'))
+                     .pipe(minifyjs({
+                       compress: true    
+                     }))
+                     
+                      .pipe(gulp.dest('dist/js/'))
+                        .pipe(connect.reload());
+    });
+
+
 
 
 gulp.task('img_mini', function(){
@@ -90,7 +102,7 @@ gulp.task('html', function(){
 // Собираем html файлы
 
 //Данная задача запускает все остальные задачи
-gulp.task('default', ['connect', 'html','build_css','build_js','bower_js','img_mini','watch']);
+gulp.task('default', ['connect', 'html','build_css','build_js','bower_js','vendor_js','img_mini','watch']);
 //Данная задача запускает все остальные задачи
 
 //Это задача следит за изменениями в тасках которые указанны в здаче
