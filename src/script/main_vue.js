@@ -46,3 +46,34 @@ function toggleClasses(vertical){
    }
 
 }
+
+
+			var glide = $('#Glide').glide({
+                arrowRightText:'',
+                arrowLeftText:'',
+                arrowRightClass:"slider-arrow--right",
+                arrowLeftClass:"slider-arrow--left",
+                hoverpause: 'true',
+                autoplay:'5000',
+                "nav": "true"
+            }).data('api_glide');
+
+
+      var glide = $('.brands__wrapper').glide({
+        arrowRightText:'',
+        arrowLeftText:'',
+        arrowRightClass:"slider-arrow--right1",
+        arrowLeftClass:"slider-arrow--left1",
+        hoverpause: 'true',
+        autoplay:'4000',
+        nav:'false'
+      }).data('api_glide');
+
+        $("input[type='tel']").mask("+7(999) 999-9999");
+
+				$(window).on('keyup', function (key) {
+					if (key.keyCode === 13) {
+						glide.jump(3, console.log('Wooo!'));
+					};
+                });
+      

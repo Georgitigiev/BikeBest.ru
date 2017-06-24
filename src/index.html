@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="style/glide.core.min.css">
+    <link rel="stylesheet" href="style/glide.theme.min.css">
     <!--[if IE]>
 <script>
      document.createElement('header');
@@ -14,8 +16,8 @@
      document.createElement('footer');
 </script>
 <![endif]-->
- <script  src="js/bower_final.js"></script>
-<script  src="js/glide.min.js"></script>
+<script  src="js/bower_final.js"></script>
+
   </head>
   <body>
   <header>
@@ -86,13 +88,21 @@
      </div>
     </div>
   </div>
-  <div class="slider">
-    <div class="slider__wrapper" >
-      <ul class="slides">
-        <li class="slide"><img src="/img/slide1.jpg" alt=""><h2></h2><div class="pricesProducts">Гироскутеры<span>от 9 500р</span></div></li>
-        <li class="slide"><img src="/img/slide1.jpg" alt=""><h2></h2><div class="pricesProducts">Гироскутеры<span>от 9 500р</span></div></li>
-        <li class="slide"><img src="/img/slide1.jpg" alt=""><h2></h2><div class="pricesProducts">Гироскутеры<span>от 9 500р</span></div></li>
+  <div class="slider" id="Glide">
+    <div class="slider__wrapper glide__wrapper" >
+      <ul class="glide__track">
+        <li class="glide__slide"><img src="/img/slide1.jpg" alt=""><h2></h2><div class="pricesProducts">Гироскутеры<span>от 9 500р</span></div></li>
+        <li class="glide__slide"><img src="/img/slide1.jpg" alt=""><h2></h2><div class="pricesProducts">Гироскутеры<span>от 9 500р</span></div></li>
+        <li class="glide__slide"><img src="/img/slide1.jpg" alt=""><h2></h2><div class="pricesProducts">Гироскутеры<span>от 9 500р</span></div></li>
       </ul>
+
+
+<div class="glide__arrows">
+        <button class="glide__arrow prev slider-arrow--left" data-glide-dir="<"> </button>
+        <button class="glide__arrow next slider-arrow--right" data-glide-dir=">"> </button>
+    </div>
+
+       <div class="glide__bullets"></div>
     </div>
   </div>
   <div class="infoBuy">
@@ -377,37 +387,9 @@
      <div class="footer__wrapper__copyright"><p>(с) 2017 «BikeBest» — интернет-магазин велосипедов и мототехники | Все права защищены, копирование должно содержать ссылка на источник</p></div>
    </div>
  </footer>
-<script  src="js/final.js"></script>
+<script  src="/js/final.js"></script>
 <script type="text/javascript">
-			var glide = $('.slider__wrapper').glide({
-        arrowRightText:'',
-        arrowLeftText:'',
-        hoverpause: 'true',
-        autoplay:'1000'
-      }).data('api_glide');
 
-
-      var glide = $('.brands__wrapper').glide({
-        arrowRightText:'',
-        arrowLeftText:'',
-        arrowRightClass:"slider-arrow--right1",
-        arrowLeftClass:"slider-arrow--left1",
-        hoverpause: 'true',
-        autoplay:'4000',
-        nav:'false'
-      }).data('api_glide');
-
-        $("input[type='tel']").mask("+7(999) 999-9999");
-
-				$(window).on('keyup', function (key) {
-					if (key.keyCode === 13) {
-						glide.jump(3, console.log('Wooo!'));
-					};
-				});
-
-				$('.slider-arrow').on('click', function() {
-					console.log(glide.current());
-				});
 		</script>
 </body>
 </html>
