@@ -18,8 +18,8 @@ var gulp       			= require('gulp'),
 
 var path = {
  	js:[
-        "bower_components/jquery/dist/jquery.min.js",
-        "bower_components/glidejs/dist/glide.min.js"
+        "bower_components/jquery/dist/jquery.min.js"
+        // "bower_components/glidejs/dist/glide.min.js"
 	]
  };
 

@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="style/project.css">
     <link rel="stylesheet" href="style/glide.core.min.css">
@@ -132,13 +135,25 @@
       </div>
     </div>
   </div>
-  <div class="brands">
-    <div class="brands__wrapper">
-      <ul class="slides">
-        <li class="slide" style="background:#eee"></li>
-        <li class="slide" style="background:#ee1"></li>
-        <li class="slide" style="background:#e1e"></li>
+  <div class="brands glide" id="Glide1">
+    <div class="brands__wrapper glide__wrapper">
+      <ul class="glide__track">
+        <li class="glide__slide" >
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </li>
+        <li class="glide__slide" >
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </li>
       </ul>
+      <div class="glide__arrows">
+        <button class="glide__arrow prev slider-arrow--left1" data-glide-dir="<"> </button>
+        <button class="glide__arrow next slider-arrow--right1" data-glide-dir=">"> </button>
+    </div>
+    <div class="glide__bullets"></div>
     </div>
   </div>
   <div class="popularCategory">

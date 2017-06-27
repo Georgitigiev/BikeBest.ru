@@ -594,6 +594,22 @@ header .wrapper__selectCity__pointer {
 .brands__wrapper ul {
   list-style-type: none;
 }
+.brands__wrapper ul li {
+  height: 80px;
+  float: left;
+  display: inline-block;
+}
+.brands__wrapper ul li .slide {
+  width: 350px;
+  height: 80px;
+  margin: 25px;
+  background: #000;
+  float: left;
+  display: inline-block;
+}
+.brands__wrapper .glide__arrows {
+  display: none;
+}
 .popularCategory {
   width: 100%;
   height: auto;
@@ -1944,7 +1960,7 @@ header .wrapper__selectCity__pointer {
   bottom: 50%;
   background: url(/img/rslide1.png);
   background-size: cover;
-  width: 20px;
+  width: 30px;
   height: 20px;
   top: 30px;
   right: 0px;
@@ -1955,7 +1971,7 @@ header .wrapper__selectCity__pointer {
   opacity: 1;
 }
 .slider-arrow--left1 {
-  bottom: 50%;
+  bottom: 30%;
   background: url(/img/lslide1.png);
   background-size: cover;
   width: 20px;

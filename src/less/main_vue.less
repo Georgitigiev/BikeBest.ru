@@ -506,9 +506,23 @@ background: #6b5372;
     overflow: hidden;
     ul{
       list-style-type: none;
-      li{}
+      li{
+        height: 80px;
+             float: left;
+          display: inline-block;
+        .slide{
+          width: 350px;
+          height: 80px;
+          margin: 25px;
+          background: #000;
+          float: left;
+          display: inline-block;
+        }
+      }
     }
-
+    .glide__arrows{
+        display: none;
+    }
   }
 }
 .popularCategory{
@@ -1907,7 +1921,7 @@ background: #6b5372;
          bottom: 50%;
          background: url(/img/rslide1.png);
          background-size: cover;
-         width: 20px;
+         width: 30px;
          height: 20px;
          top: 30px;
          right: 0px;
@@ -1917,7 +1931,7 @@ background: #6b5372;
          opacity: 1}
        }
  			.slider-arrow--left1 {
-          bottom: 50%;
+          bottom: 30%;
           background: url(/img/lslide1.png);
           background-size: cover;
           width: 20px;
