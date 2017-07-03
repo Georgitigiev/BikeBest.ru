@@ -2328,7 +2328,6 @@ header .wrapper__selectCity__pointer {
 }
 .mainFieldProduct__block .infoProduct__property {
   width: 100%;
-  height: 520px;
   border-bottom: solid 1px #7d7d7d;
 }
 .mainFieldProduct__block .infoProduct__property h2 {
@@ -2336,6 +2335,80 @@ header .wrapper__selectCity__pointer {
   font-family: arial Narrow, Opensans, sans-serif;
   font-weight: 100;
   padding: 35px 0 35px 0;
+}
+.mainFieldProduct__block .infoProduct__property__module {
+  width: 100%;
+  height: auto;
+}
+.mainFieldProduct__block .infoProduct__property__module--left {
+  width: 75%;
+  float: left;
+}
+.mainFieldProduct__block .infoProduct__property__module--left .openListprop {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  color: #888;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+.mainFieldProduct__block .infoProduct__property__module--left .openListprop a {
+  text-decoration: none;
+  border-bottom: dotted 1px #5d5d5d;
+  color: #717171;
+}
+.mainFieldProduct__block .infoProduct__property__module--left ul {
+  list-style-type: none;
+}
+.mainFieldProduct__block .infoProduct__property__module--left ul li {
+  background: url(../img/dot.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 10px;
+}
+.mainFieldProduct__block .infoProduct__property__module--left ul li .propertyl {
+  background: #fff;
+  padding: 10px 10px;
+  color: #333;
+  font-size: 20px;
+  font-family: arial narrow, sans-serif;
+  position: absolute;
+  left: 0;
+}
+.mainFieldProduct__block .infoProduct__property__module--left ul li .propertyl span {
+  width: 17px;
+  height: 16px;
+  background: #0dcea8;
+  color: #fff;
+  float: right;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 11px;
+  cursor: pointer;
+  padding-top: 2px;
+  box-sizing: border-box;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+.mainFieldProduct__block .infoProduct__property__module--left ul li .variabler {
+  background: #fff;
+  padding: 10px 10px;
+  color: #333;
+  font-size: 20px;
+  font-family: arial narrow, sans-serif;
+  position: absolute;
+  right: 0;
+}
+.mainFieldProduct__block .infoProduct__property__module--right {
+  width: 25%;
+  height: 300px;
+  float: left;
 }
 .mainFieldProduct__block .infoProduct__comment {
   width: 100%;
@@ -2347,4 +2420,156 @@ header .wrapper__selectCity__pointer {
   font-family: arial Narrow, Opensans, sans-serif;
   font-weight: 100;
   padding: 35px 0 35px 0;
+}
+.mainFieldProduct__block .infoProduct__comment__block {
+  width: 100%;
+  height: auto;
+}
+.mainFieldProduct__block .infoProduct__comment__block--left {
+  width: 22%;
+  float: left;
+  height: 350px;
+  background: url(../img/rekom.jpg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin-left: 3%;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right {
+  width: 70%;
+  float: right;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock {
+  width: 100%;
+  height: 170px;
+  padding-top: 30px;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock:first-child {
+  border-bottom: solid 1px #ddd;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock__info {
+  width: 100%;
+  height: 40px;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock__info__name {
+  font-size: 24px;
+  font-family: arial narrow, sans-serif;
+  color: #333;
+  float: left;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock__info__date {
+  color: #999;
+  font-size: 16px;
+  font-family: arial narrow, sans-serif;
+  float: left;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock__info__design {
+  font-size: 16px;
+  font-family: arial narrow, sans-serif;
+  color: #333;
+  float: left;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock__info__quality {
+  font-size: 16px;
+  font-family: arial narrow, sans-serif;
+  color: #333;
+  float: left;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .otzivBlock p {
+  text-align: justify;
+  font-family: arial narrow, sans-serif;
+  font-size: 20px;
+  color: #888;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .buttonOtz {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 150px;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .buttonOtz__smotr {
+  border-bottom: dotted 2px #666;
+  font-size: 20px;
+  font-family: arial narrow, sans-serif;
+  color: #999;
+  float: left;
+  margin: 20px;
+  cursor: pointer;
+}
+.mainFieldProduct__block .infoProduct__comment__block--right .buttonOtz__otzB {
+  float: left;
+  width: 240px;
+  height: 45px;
+  background: #1da289;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  font-family: arial narrow, sans-serif;
+  cursor: pointer;
+  margin: 10px;
+}
+.mainFieldProduct__block .infoProduct__sliders {
+  width: 100%;
+  height: 600px;
+}
+.mainFieldProduct__block .infoProduct__sliders h2 {
+  font-size: 24px;
+  font-family: OpenSans, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides--wrapper {
+  width: 100%;
+  height: 420px;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides--wrapper .mainField__wrapper__rightBlock--products {
+  width: 280px;
+  height: 400px;
+  background: #ffffff;
+  display: inline-block;
+  border: solid 1px #E0E0E0;
+  padding: 5px;
+  cursor: pointer;
+  float: left;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: relative;
+  margin: 3px;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides--wrapper ul {
+  list-style-type: none;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides--wrapper ul li {
+  width: 320px;
+  height: 420px;
+  float: left;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides .glide__bullets {
+  bottom: -20px;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides .glide__bullets button {
+  width: 20px;
+  height: 20px;
+  background-color: #dedede;
+}
+.mainFieldProduct__block .infoProduct__sliders__glides .glide__bullets button:hover {
+  background-color: #9b9b9b;
+}
+.mainFieldProduct__block .infoProduct__sliders .infoProduct {
+  background: #fff;
 }

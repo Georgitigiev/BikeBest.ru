@@ -2343,6 +2343,16 @@ var glide = $('#Glide1').glide({
     nav: 'false'
 }).data('api_glide');
 
+var glide = $('#Glide2').glide({
+    arrowRightText: '',
+    arrowLeftText: '',
+    arrowRightClass: "slider-arrow--right1",
+    arrowLeftClass: "slider-arrow--left1",
+    hoverpause: 'true',
+    autoplay: '4000',
+    nav: 'false'
+}).data('api_glide');
+
 $("input[type='tel']").mask("+7(999) 999-9999");
 
 $(window).on('keyup', function (key) {

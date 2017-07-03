@@ -2362,19 +2362,29 @@ function toggleClasses(vertical){
             }).data('api_glide');
 
 
-      var glide = $('#Glide1').glide({
-        arrowRightText:'',
-        arrowLeftText:'',
-        arrowRightClass:"slider-arrow--right1",
-        arrowLeftClass:"slider-arrow--left1",
-        hoverpause: 'true',
-        autoplay:'4000',
-        nav:'false'
-      }).data('api_glide');
+            var glide = $('#Glide1').glide({
+                arrowRightText:'',
+                arrowLeftText:'',
+                arrowRightClass:"slider-arrow--right1",
+                arrowLeftClass:"slider-arrow--left1",
+                hoverpause: 'true',
+                autoplay:'4000',
+                nav:'false'
+            }).data('api_glide');
+                   
+            var glide = $('#Glide2').glide({
+                arrowRightText:'',
+                arrowLeftText:'',
+                arrowRightClass:"slider-arrow--right1",
+                arrowLeftClass:"slider-arrow--left1",
+                hoverpause: 'true',
+                autoplay:'4000',
+                nav:'false'
+            }).data('api_glide');
 
-        $("input[type='tel']").mask("+7(999) 999-9999");
-
-				$(window).on('keyup', function (key) {
+            $("input[type='tel']").mask("+7(999) 999-9999");
+				
+                $(window).on('keyup', function (key) {
 					if (key.keyCode === 13) {
 						glide.jump(3, console.log('Wooo!'));
 					};
