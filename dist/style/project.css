@@ -2615,12 +2615,12 @@ header .wrapper__selectCity__pointer {
   height: 30px;
   margin: -1px 4px 0 0;
   vertical-align: middle;
-  background: url(../img/check_sprite2.png) left top no-repeat;
+  background: url(../img/check_sprite4.png) left top no-repeat;
   cursor: pointer;
   padding-top: 5px;
 }
 .FieldBasket__field__form form input[type="checkbox"]:checked + label span {
-  background: url(../img/check_sprite2.png) -69px top no-repeat;
+  background: url(../img/check_sprite4.png) -69px top no-repeat;
 }
 .FieldBasket__field__form form p.nameszag {
   width: 100%;
