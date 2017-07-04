@@ -2597,8 +2597,14 @@ header .wrapper__selectCity__pointer {
   height: auto;
   float: left;
 }
+.FieldBasket__field__form form {
+  width: 100%;
+}
 .FieldBasket__field__form form label {
   font-size: 14px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 600;
+  color: #2b2b2b;
 }
 .FieldBasket__field__form form input[type="checkbox"] {
   display: none;
@@ -2611,9 +2617,16 @@ header .wrapper__selectCity__pointer {
   vertical-align: middle;
   background: url(../img/check_sprite2.png) left top no-repeat;
   cursor: pointer;
+  padding-top: 5px;
 }
 .FieldBasket__field__form form input[type="checkbox"]:checked + label span {
-  background: url(../img/check_sprite2.png) -70px top no-repeat;
+  background: url(../img/check_sprite2.png) -69px top no-repeat;
+}
+.FieldBasket__field__form form p.nameszag {
+  width: 100%;
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+  padding: 20px 0;
 }
 .FieldBasket__field__countProduct {
   width: 50%;
