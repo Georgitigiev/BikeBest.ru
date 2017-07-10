@@ -2354,6 +2354,7 @@ var glide = $('#Glide2').glide({
 }).data('api_glide');
 
 $("input[type='tel']").mask("+7(999) 999-9999");
+$("input[type='email]").mask("/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i");
 
 $(window).on('keyup', function (key) {
     if (key.keyCode === 13) {

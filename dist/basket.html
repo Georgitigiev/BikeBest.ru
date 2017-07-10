@@ -104,20 +104,32 @@
    <h1>КОРЗИНА</h1>
   <div class="FieldBasket__field">
     <div class="FieldBasket__field__form">
-      <form action="" method="POST">
-         <input type="checkbox" id="c1" name="cc" />
-         <label for="c1">
-           <span></span>Физическое лицо
-         </label>
-          <input type="checkbox" id="c2" name="cc" style='' />
-         <label for="c2">
-           <span></span>Юридическое лицо
-         </label>
-         <p class="nameszag">Ваши контактные данные:</p>
+      <form id="basket" method="POST">
+         <div class="left">
+            <input type="checkbox" id="c1" name="cc" />
+            <label for="c1">
+              <span></span>Физическое лицо
+            </label>
+              <input type="checkbox" id="c2" name="cc"/>
+            <label for="c2">
+              <span></span>Юридическое лицо
+            </label>
+            <p class="nameszag">Ваши контактные данные:</p>
+              <input type="text" placeholder="Имя" class="nameBasket">
+              <input type="email" placeholder="Электронный адрес" class="emailBasket">
+              <input type="tel" placeholder="Телефон" class="telefonBasket">
+              <input type="text" placeholder="Город" class="cityBasket">
+              <textarea name="" id="commEnt" class="commEnt" placeholder="Комментарий к заказу..." cols="30" rows="10"></textarea>
+            <input type="submit">
+          </div>
+          <div class="right">
+           
+           
+           
+           </div>
+
+
        </form>
-    </div>
-    <div class="FieldBasket__field__countProduct">
-      
     </div>
   </div>
  </div>
@@ -193,9 +205,5 @@
    </div>
  </footer>
 <script  src="/js/final.js"></script>
-<script type="text/javascript">
-
-
-		</script>
 </body>
 </html>
