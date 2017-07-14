@@ -2603,9 +2603,13 @@ header .wrapper__selectCity__pointer {
 .FieldBasket__field__form form input:focus {
   outline: none;
 }
+.FieldBasket__field__form form input[type="submit"] {
+  float: right;
+}
 .FieldBasket__field__form form .left {
   width: 50%;
   float: left;
+  height: 370px;
 }
 .FieldBasket__field__form form .left .telefonBasket {
   width: 48.5%;
@@ -2729,4 +2733,84 @@ header .wrapper__selectCity__pointer {
 .FieldBasket__field__form form .right {
   width: 50%;
   float: left;
+  height: 370px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.FieldBasket__field__form form .right .naimenovanie {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #eee;
+  border-top: solid 1px #eee;
+}
+.FieldBasket__field__form form .right .naimenovanie__name {
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+.FieldBasket__field__form form .right .naimenovanie__name img {
+  float: left;
+}
+.FieldBasket__field__form form .right .naimenovanie__name p {
+  float: left;
+  font-family: Opensans;
+  font-size: 16px;
+  line-height: 40px;
+}
+.FieldBasket__field__form form .right .naimenovanie__count {
+  width: 15%;
+  float: left;
+  padding-top: 6px;
+  font-family: OpenSans;
+}
+.FieldBasket__field__form form .right .naimenovanie__count p {
+  padding-top: 5px;
+  line-height: 16px;
+}
+.FieldBasket__field__form form .right .naimenovanie__count input[type="button"] {
+  float: left;
+  width: 31%;
+  background: #fff;
+  height: 19px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  margin-top: 6px;
+  margin-left: 1px;
+  line-height: 0;
+}
+.FieldBasket__field__form form .right .naimenovanie__count input[type="button"]:hover {
+  background: #eee;
+}
+.FieldBasket__field__form form .right .naimenovanie__count input[type="text"] {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-top: 6px;
+  background: #eee;
+  border: none;
+  padding: 2px;
+  margin-left: 1px;
+}
+.FieldBasket__field__form form .right .naimenovanie__price {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 10px;
+  font-family: OpenSans;
+}
+.FieldBasket__field__form form .right .naimenovanie__price p {
+  line-height: 16px;
+}
+.FieldBasket__field__form form .right .naimenovanie__price span {
+  font-family: arial narrow, sans-serif;
+  font-size: 20px;
+  color: #1da289;
+  text-align: center;
+}
+.FieldBasket__field__form form .right .naimenovanie__delete {
+  width: 5%;
+  float: left;
+  padding-top: 10px;
+  cursor: pointer;
 }
