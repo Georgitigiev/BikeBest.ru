@@ -2587,7 +2587,7 @@ header .wrapper__selectCity__pointer {
 }
 .FieldBasket__field {
   width: 100%;
-  height: 400px;
+  height: 800px;
   border-bottom: solid 1px #333;
   border-top: solid 1px #333;
   padding: 20px 0;
@@ -2730,23 +2730,32 @@ header .wrapper__selectCity__pointer {
   font-family: OpenSans, sans-serif;
   padding: 20px 0;
 }
+.FieldBasket__field__form form .PlusProduct {
+  width: 100%;
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+  padding: 20px 0;
+}
 .FieldBasket__field__form form .right {
   width: 50%;
   float: left;
-  height: 370px;
+  height: 345px;
   padding-left: 10px;
   box-sizing: border-box;
 }
 .FieldBasket__field__form form .right .naimenovanie {
   width: 100%;
   height: auto;
-  border-bottom: solid 1px #eee;
   border-top: solid 1px #eee;
+}
+.FieldBasket__field__form form .right .naimenovanie:last-child {
+  border-bottom: solid 1px #eee;
 }
 .FieldBasket__field__form form .right .naimenovanie__name {
   width: 60%;
   display: inline-block;
   float: left;
+  height: 35px;
 }
 .FieldBasket__field__form form .right .naimenovanie__name img {
   float: left;
@@ -2760,7 +2769,7 @@ header .wrapper__selectCity__pointer {
 .FieldBasket__field__form form .right .naimenovanie__count {
   width: 15%;
   float: left;
-  padding-top: 6px;
+  padding-top: 3px;
   font-family: OpenSans;
 }
 .FieldBasket__field__form form .right .naimenovanie__count p {
@@ -2796,7 +2805,7 @@ header .wrapper__selectCity__pointer {
   width: 20%;
   float: left;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 7px;
   font-family: OpenSans;
 }
 .FieldBasket__field__form form .right .naimenovanie__price p {
@@ -2813,4 +2822,110 @@ header .wrapper__selectCity__pointer {
   float: left;
   padding-top: 10px;
   cursor: pointer;
+}
+.FieldBasket__field__form form .right__slideProductsplus {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  margin-top: 6px;
+}
+.FieldBasket__field__form form .right__slideProductsplus .glide__bullets {
+  top: -25px;
+}
+.FieldBasket__field__form form .right__slideProductsplus .glide__bullets button {
+  background: #aaa;
+  float: right;
+  width: 10px;
+  height: 10px;
+}
+.FieldBasket__field__form form .right__slideProductsplus .glide__bullet .active {
+  background: #666 !important;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 130px;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a {
+  float: left;
+  border: solid 1px #ccc;
+  position: relative;
+  margin: 0.5%;
+  width: 18.5%;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a img {
+  width: 90px;
+  margin: 10px auto;
+  display: block;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a .blockmin {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a .pricesAdd {
+  transition: all 0.4s;
+  position: absolute;
+  height: 25px;
+  display: block;
+  text-align: center;
+  width: 90%;
+  bottom: 20px;
+  background: rgba(151, 132, 163, 0.71);
+  font-family: OpenSans, sans-serif;
+  color: #fff;
+  left: 5%;
+  font-size: 14px;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a .pricesAdd:hover {
+  transition: all 0.4s;
+  background: #9784a3;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a .nameProduct {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  color: #000;
+  font-family: OpenSans;
+  font-size: 14px;
+  display: block;
+  bottom: 0px;
+  position: absolute;
+}
+.FieldBasket__field__form form .right__slideProductsplus__wrapp ul li a .productPrice {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  color: #000;
+  font-family: OpenSans;
+  font-size: 14px;
+  display: block;
+  bottom: -30px;
+  position: absolute;
+  font-weight: 600;
+}
+.FieldBasket__field__form form .hr {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin: 70px auto 5px auto;
+}
+.FieldBasket__field__form form .AllPrice {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+  color: #333;
+}
+.FieldBasket__field__form form .AllPrice p {
+  color: #1da289;
+  float: right;
+  padding-left: 5px;
 }

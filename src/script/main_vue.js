@@ -2349,7 +2349,21 @@ function toggleClasses(vertical){
    }
 
 }
-
+     
+              $(".naimenovanie__count .plus").on("click", function(){
+                   var ParenCount = $(this).parent();
+                   var cc = $(ParenCount).children(".countProduct").val();
+                   console.log(cc);
+                    cc++;
+                   $(ParenCount).children(".countProduct").val(cc)
+              })  
+              $(".naimenovanie__count .minus").on("click", function(){
+                   var ParenCount = $(this).parent();
+                   var cc = $(ParenCount).children(".countProduct").val();
+                   console.log(cc);
+                    cc--;
+                   $(ParenCount).children(".countProduct").val(cc)
+              })  
 
 			var glide = $('#Glide').glide({
                 arrowRightText:'',
@@ -2382,6 +2396,17 @@ function toggleClasses(vertical){
                 nav:'false'
             }).data('api_glide');
               
+                var glide = $('#glideProductsplus').glide({
+                arrowRightText:'',
+                arrowLeftText:'',
+                arrowRightClass:"slider-arrow--right1",
+                arrowLeftClass:"slider-arrow--left1",
+                hoverpause: 'true',
+                autoplay:'4000',
+                nav:'true'
+            }).data('api_glide');
+
+
 
             $("input[type='tel']").mask("+7(999) 999-9999");
             $("input[type='email]").mask("/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i");

@@ -42,7 +42,7 @@ gulp.task('connect', function() {
 // Собираем .less файлы в .css
 gulp.task('build_css', function(){
 	return gulp.src('src/less/*.less')
-		   .pipe(less())
+		   .pipe(less().on('error', console.error.bind(console)))
 		   .pipe(concat('project.css'))
            .pipe(autoprefixer())
 		   .pipe(gulp.dest('dist/style'))
